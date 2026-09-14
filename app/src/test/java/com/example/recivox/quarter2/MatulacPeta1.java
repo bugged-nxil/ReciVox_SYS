@@ -1,8 +1,8 @@
-package com.example.MatulacPeta.quarter2;
+package com.example.recivox.quarter2;
 
 import org.junit.Test;
 
-public class MatulacPeta {
+public class MatulacPeta1 {
     @Test
     public void thisisMyInfo() {
 
