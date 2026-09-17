@@ -13,7 +13,7 @@ public class MagnoPeta1 {
         int Age = 17;
 
 // 2. THE OUTPUT (Printing to the console)
-        System.out.println("----- MY INFORMATION -----");
+        System.out.println("-- PERSONAL DETAILS --");
         System.out.println("Hello, I am "+myName +" currently, "+Age +" years old.");
         System.out.println("My favorite game to play is "+favGame +".");
         System.out.println("Paborito ko ang, "+favFood +" napaka sarap!");
