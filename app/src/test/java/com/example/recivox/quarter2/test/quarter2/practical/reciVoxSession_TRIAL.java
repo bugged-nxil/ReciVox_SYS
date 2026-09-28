@@ -4,7 +4,7 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class reciVoxSession_TRIAL{ 
+public class reciVoxSession_TRIAL{
 
     @Test
     public void testReciVoxSessionFlow() {
