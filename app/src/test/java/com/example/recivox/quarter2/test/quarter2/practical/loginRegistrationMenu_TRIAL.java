@@ -126,6 +126,6 @@ public class loginRegistrationMenu_TRIAL {
             }
         }
 
-        System.out.println("\n======= CREDENTIALS APPROVED - PROCEED =======");
+        System.out.println("\n======= CREDENTIALS APPROVED =======");
     }
 }

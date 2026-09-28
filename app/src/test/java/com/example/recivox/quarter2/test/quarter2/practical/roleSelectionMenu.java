@@ -44,7 +44,7 @@ public class roleSelectionMenu {
                     break;
 
                 default:
-                    System.out.println("Invalid option.");
+                    System.out.println("Invalidated option.");
             }
         }
     }
