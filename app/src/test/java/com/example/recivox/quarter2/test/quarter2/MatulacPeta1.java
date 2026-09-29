@@ -1,4 +1,4 @@
-package com.example.recivox.quarter2;
+package com.example.recivox.quarter2.test.quarter2;
 
 import org.junit.Test;
 
