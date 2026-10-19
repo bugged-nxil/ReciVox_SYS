@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F7FC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textColor="#252139"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Placeholder Profile Image -->
+            <TextView
+                android:id="@+id/educatorProfileImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="#E9DDFB"
+                android:gravity="center"
+                android:text="@string/p"
+                android:textColor="#6C4AB6"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/educatorProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="@string/user_1234567"
+                android:textColor="#252139"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <!-- Class / Section -->
+            <TextView
+                android:id="@+id/educatorClassSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/idk"
+                android:textColor="#817A91"
+                android:textSize="15sp" />
+
+            <!-- School ID -->
+            <TextView
+                android:id="@+id/educatorSchoolId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="@string/school_id"
+                android:textColor="#817A91"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <!-- History -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/history"
+                android:textColor="#252139"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <!-- Created ReciRoom -->
+            <LinearLayout
+                android:id="@+id/educatorHistoryContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/created_reciroom"
+                    android:textColor="#252139"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/educatorRoomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/idk2"
+                    android:textColor="#6C4AB6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/educatorRoomSerial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/room_serial"
+                    android:textColor="#817A91"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/we_recieve_your_voice"
+                android:textColor="#817A91"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/navEducatorHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/nhome"
+            android:textColor="#817A91"
+            android:textSize="12sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/navEducatorRooms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/nrecirooms"
+            android:textColor="#817A91"
+            android:textSize="12sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/navEducatorPings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/npings"
+            android:textColor="#817A91"
+            android:textSize="12sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/navEducatorProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/nprofile2"
+            android:textColor="#6C4AB6"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

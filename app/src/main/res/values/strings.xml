@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">ReciVox</string>
+    <string name="profile">Profile</string>
+    <string name="p">P</string>
+    <string name="user_1234567">User 1234567</string>
+    <string name="idk">--- • ---</string>
+    <string name="school_id">School ID: ---</string>
+    <string name="history">History</string>
+    <string name="created_reciroom">Created ReciRoom</string>
+    <string name="idk2">---</string>
+    <string name="room_serial">Room Serial: ---</string>
+    <string name="we_recieve_your_voice">We Recieve Your Voice</string>
+    <string name="nhome">⌂\nHome</string>
+    <string name="nrecirooms">▤\nReciRooms</string>
+    <string name="npings">♧\nPings</string>
+    <string name="nprofile2">○\nProfile</string>
+    <string name="profileEducator">Profile</string>
+    <string name="ord">P</string>
+    <string name="user_6767">User 1234567</string>
+    <string name="mymy">--- • ---</string>
+    <string name="school_idih">School ID: ---</string>
+    <string name="recichips">ReciChips</string>
+    <string name="who">---</string>
+    <string name="tally_score">Tally / Score</string>
+    <string name="its">---</string>
+    <string name="historymeaf">History</string>
+    <string name="joined_reciroom">Joined ReciRoom</string>
+    <string name="bias">---</string>
+    <string name="room_id">Room ID: ---</string>
+    <string name="we_recieve_your_voices">We Recieve Your Voice</string>
+    <string name="nhomed">⌂\nHome</string>
+    <string name="nreciroomss">▤\nReciRooms</string>
+    <string name="npigs">♧\nPings</string>
+    <string name="nprofile">○\nProfile</string>
 </resources>
