@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="‹  Add Question"
+            android:textColor="#6D45C7"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz: ---"
+            android:textColor="#817A91"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Question Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question Number"
+            android:textColor="#252139"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="Question ---"
+            android:textColor="#6D45C7"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:background="#E9DDFB"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Question Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question Title"
+            android:textColor="#252139"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/questionTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Enter question title..."
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:backgroundTint="#6D45C7"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Random Serial Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serial Number"
+            android:textColor="#252139"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/questionSerialNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="---"
+            android:textColor="#817A91"
+            android:paddingStart="12dp"
+            android:background="#E9DDFB"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Question Type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question Type"
+            android:textColor="#252139"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/questionTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#6D45C7"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Question Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:textColor="#252139"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/questionTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="Write your question here..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="12dp"
+            android:backgroundTint="#6D45C7"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Multiple Choice Settings -->
+        <LinearLayout
+            android:id="@+id/multipleChoiceSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Choices (2–6)"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/choiceCountSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choices"
+                android:textColor="#6D45C7"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/choiceAInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Choice A"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/choiceBInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Choice B"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/choiceCInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Choice C"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/choiceDInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Choice D"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/choiceEInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Choice E"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/choiceFInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Choice F"
+                android:singleLine="true"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correct Answer"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/correctChoiceSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="18dp" />
+
+        </LinearLayout>
+
+        <!-- Identification Settings -->
+        <LinearLayout
+            android:id="@+id/identificationSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correct Answer"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/identificationAnswerInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Enter the expected answer..."
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="18dp" />
+
+        </LinearLayout>
+
+        <!-- Essay Settings -->
+        <LinearLayout
+            android:id="@+id/essaySection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer Format"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Essay — Paragraph Form"
+                android:textColor="#6D45C7"
+                android:background="#E9DDFB"
+                android:padding="14dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="18dp" />
+
+        </LinearLayout>
+
+        <!-- Points -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Points"
+            android:textColor="#252139"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/questionPointsInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Enter points (e.g., 10)"
+            android:inputType="number"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:backgroundTint="#6D45C7"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Question -->
+        <Button
+            android:id="@+id/saveQuestionButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Save Question"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6D45C7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We Recieve Your Voice"
+            android:textColor="#817A91"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
