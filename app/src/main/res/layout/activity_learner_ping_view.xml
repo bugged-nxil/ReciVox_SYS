@@ -1,144 +1,275 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F7FC"
-    android:fillViewport="true">
+    android:orientation="vertical"
+    android:background="#F6F3FC">
 
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="‹  Create a Ping"
+                android:textColor="#6D45C7"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ask your educator for help."
+                android:textColor="#817A91"
+                android:textSize="15sp"
+                android:paddingBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose ReciRoom"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/roomSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#6D45C7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What do you need help with?"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#6D45C7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topic"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/topicInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="e.g., Network Security"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your question"
+                android:textColor="#252139"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/questionInput"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="top|start"
+                android:hint="Type your question or what you need clarified..."
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="12dp"
+                android:backgroundTint="#6D45C7"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Be specific so your educator can help you better."
+                android:textColor="#817A91"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/attachButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="＋ Attach image or file (Optional)"
+                android:textAllCaps="false"
+                android:textColor="#6D45C7"
+                android:backgroundTint="#E9DDFB" />
+
+            <CheckBox
+                android:id="@+id/privateCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send privately to my educator"
+                android:textColor="#252139"
+                android:checked="true"
+                android:buttonTint="#6D45C7"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/sendPingButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Send Ping"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6D45C7" />
+
+            <!-- Bottom spacing -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="‹  Create a Ping"
-            android:textColor="#6946B8"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:paddingBottom="6dp" />
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ask your educator for help."
-            android:textColor="#77718B"
-            android:textSize="15sp"
-            android:paddingBottom="24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⌂"
+                android:textSize="25sp"
+                android:textColor="#817A91" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose ReciRoom"
-            android:textColor="#29243D"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="11sp"
+                android:textColor="#817A91" />
+        </LinearLayout>
 
-        <Spinner
-            android:id="@+id/roomSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#6946B8" />
+        <!-- Rooms -->
+        <LinearLayout
+            android:id="@+id/navRooms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="What do you need help with?"
-            android:textColor="#29243D"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▤"
+                android:textSize="23sp"
+                android:textColor="#817A91" />
 
-        <Spinner
-            android:id="@+id/categorySpinner"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#6946B8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rooms"
+                android:textSize="11sp"
+                android:textColor="#817A91" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Topic"
-            android:textColor="#29243D"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+        <!-- Pings: Active -->
+        <LinearLayout
+            android:id="@+id/navPings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
 
-        <EditText
-            android:id="@+id/topicInput"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:hint="e.g., Network Security"
-            android:singleLine="true"
-            android:inputType="textCapSentences"
-            android:padding="12dp"
-            android:backgroundTint="#6946B8"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✉"
+                android:textSize="22sp"
+                android:textColor="#6D45C7" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your question"
-            android:textColor="#29243D"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pings"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#6D45C7" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/questionInput"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:gravity="top|start"
-            android:hint="Type your question or what you need clarified..."
-            android:inputType="textCapSentences|textMultiLine"
-            android:padding="12dp"
-            android:backgroundTint="#6946B8"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Be specific so your educator can help you better."
-            android:textColor="#77718B"
-            android:textSize="12sp"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●"
+                android:textSize="21sp"
+                android:textColor="#817A91" />
 
-        <Button
-            android:id="@+id/attachButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="＋ Attach image or file (Optional)"
-            android:textAllCaps="false"
-            android:textColor="#6946B8"
-            android:backgroundTint="#EDE4FC" />
-
-        <CheckBox
-            android:id="@+id/privateCheckBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Send privately to my educator"
-            android:textColor="#29243D"
-            android:checked="true"
-            android:buttonTint="#6946B8"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="20dp" />
-
-        <Button
-            android:id="@+id/sendPingButton"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:text="Send Ping"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#6946B8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="11sp"
+                android:textColor="#817A91" />
+        </LinearLayout>
 
     </LinearLayout>
-</ScrollView>
+
+</LinearLayout>
