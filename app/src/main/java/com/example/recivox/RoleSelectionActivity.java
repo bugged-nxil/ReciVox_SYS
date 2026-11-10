@@ -1,24 +1,62 @@
+
 package com.example.recivox;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class RoleSelectionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_role_selection);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        String role = getIntent().getStringExtra("USER_ROLE");
+        String name = getIntent().getStringExtra("USER_NAME");
+        String email = getIntent().getStringExtra("USER_EMAIL");
+
+        if (role == null) {
+            Toast.makeText(this,
+                    "Unable to identify your account role.",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
+
+        Intent intent;
+
+        if (role.equalsIgnoreCase("Learner")) {
+
+            intent = new Intent(
+                    RoleSelectionActivity.this,
+                    LearnerDashboardActivity.class
+            );
+
+        } else if (role.equalsIgnoreCase("Educator")) {
+
+            intent = new Intent(
+                    RoleSelectionActivity.this,
+                    EducatorDashboardActivity.class
+            );
+
+        } else {
+
+            Toast.makeText(this,
+                    "Invalid account role.",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
+
+        intent.putExtra("USER_NAME", name);
+        intent.putExtra("USER_EMAIL", email);
+        intent.putExtra("USER_ROLE", role);
+
+        startActivity(intent);
+        finish();
     }
 }

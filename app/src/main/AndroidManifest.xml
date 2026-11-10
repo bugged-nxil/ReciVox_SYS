@@ -50,7 +50,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activity_educator_ping_view"
+            android:name=".EducatorPingViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -62,7 +62,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".questionnaire"
+            android:name=".QuestionMakerActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
