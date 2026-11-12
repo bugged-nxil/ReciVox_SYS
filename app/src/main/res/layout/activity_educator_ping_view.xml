@@ -80,119 +80,12 @@
                 android:layout_marginTop="26dp"
                 android:layout_marginBottom="12dp" />
 
-            <!-- First Ping -->
+            <!-- Dynamic Incoming Pings Container -->
             <LinearLayout
-                android:id="@+id/pingCard1"
+                android:id="@+id/incomingPingsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:background="#FFFFFF"
-                android:elevation="2dp"
-                android:layout_marginBottom="14dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Learner ID: 20260001"
-                    android:textColor="#6D45C7"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Topic: Network Security"
-                    android:textColor="#252139"
-                    android:textStyle="bold"
-                    android:textSize="17sp"
-                    android:layout_marginTop="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Can you explain how a firewall protects a computer?"
-                    android:textColor="#514B62"
-                    android:textSize="14sp"
-                    android:layout_marginTop="8dp" />
-
-                <TextView
-                    android:id="@+id/status1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status: Pending"
-                    android:textColor="#B26A00"
-                    android:textStyle="bold"
-                    android:layout_marginTop="12dp" />
-
-                <Button
-                    android:id="@+id/respond1"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:text="View and Respond"
-                    android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
-                    android:backgroundTint="#6D45C7"
-                    android:layout_marginTop="8dp" />
-
-            </LinearLayout>
-
-            <!-- Second Ping -->
-            <LinearLayout
-                android:id="@+id/pingCard2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:background="#FFFFFF"
-                android:elevation="2dp"
-                android:layout_marginBottom="14dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Learner ID: 20260002"
-                    android:textColor="#6D45C7"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Topic: Quiz Clarification"
-                    android:textColor="#252139"
-                    android:textStyle="bold"
-                    android:textSize="17sp"
-                    android:layout_marginTop="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Will the upcoming quiz include our previous lesson?"
-                    android:textColor="#514B62"
-                    android:textSize="14sp"
-                    android:layout_marginTop="8dp" />
-
-                <TextView
-                    android:id="@+id/status2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status: Pending"
-                    android:textColor="#B26A00"
-                    android:textStyle="bold"
-                    android:layout_marginTop="12dp" />
-
-                <Button
-                    android:id="@+id/respond2"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:text="View and Respond"
-                    android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
-                    android:backgroundTint="#6D45C7"
-                    android:layout_marginTop="8dp" />
-
-            </LinearLayout>
+                android:orientation="vertical" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -230,11 +123,12 @@
             android:focusable="true">
 
             <TextView
+                android:id="@+id/Home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="⌂"
-                android:textSize="25sp"
-                android:textColor="#817A91" />
+                android:textColor="#817A91"
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -321,8 +215,10 @@
                 android:text="Profile"
                 android:textSize="11sp"
                 android:textColor="#817A91" />
+
         </LinearLayout>
 
     </LinearLayout>
 
 </LinearLayout>
+
